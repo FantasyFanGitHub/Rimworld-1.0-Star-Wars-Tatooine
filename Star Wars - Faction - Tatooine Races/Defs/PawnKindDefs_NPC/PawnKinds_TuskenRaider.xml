@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="TuskenRaiderNPCAbstractBase" Abstract="True">
+		<defaultFactionType>O21_NPC_TuskenRaider_Faction</defaultFactionType>
+		<baseRecruitDifficulty>1.0</baseRecruitDifficulty>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<itemQuality>Normal</itemQuality>
+		<isFighter>true</isFighter>
+		<race>Alien_TuskenRaider</race>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>2</max>
+		</gearHealthRange>
+		<apparelTags Inherit="false">
+			<li>TuskenRaiderApparel</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>
+			<min>600</min>
+			<max>600</max>
+		</apparelMoney>
+		<weaponMoney>
+			<min>910</min>
+      		<max>910</max>
+    	</weaponMoney>
+		<techHediffsMoney>
+			<min>12000</min>
+			<max>20000</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<backstoryCategories>
+			<li>Raider</li>
+		</backstoryCategories>
+		<techHediffsChance>0</techHediffsChance>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="TuskenRaiderNPCAbstractBase">
+		<defName>O21_NPC_TuskenRaiderTrooperRanged</defName>
+		<label>Tusken Raider Sniper</label>
+		<labelPlural>Tusken Raider Snipers</labelPlural>
+		<isFighter>true</isFighter>
+		<combatPower>150</combatPower>
+		<weaponTags>
+      		<li>TuskenRaiderGun</li>
+    	</weaponTags>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="TuskenRaiderNPCAbstractBase">
+		<defName>O21_NPC_TuskenRaiderTrooperMelee</defName>
+		<label>Tusken Raider</label>
+		<labelPlural>Tusken Raiders</labelPlural>
+		<isFighter>true</isFighter>
+		<combatPower>150</combatPower>
+		<weaponTags>
+			<li>TuskenRaiderWeapons</li>
+    	</weaponTags>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="TuskenRaiderNPCAbstractBase">
+		<defName>O21_NPC_TuskenRaiderOfficer</defName>
+		<label>Tusken Raider Hunter</label>
+		<labelPlural>Tusken Raider Hunters</labelPlural>
+		<isFighter>true</isFighter>
+		<combatPower>175</combatPower>
+		<weaponTags>
+      		<li>TuskenRaiderGun</li>
+    	</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TuskenRaiderNPCAbstractBase">
+		<defName>O21_NPC_TuskenRaiderCommander</defName>
+		<label>Tusken Raider Chief</label>
+		<labelPlural>Tusken Raider Chiefs</labelPlural>
+		<isFighter>true</isFighter>
+		<factionLeader>true</factionLeader>
+		<combatPower>200</combatPower>
+		<weaponTags>
+      		<li>TuskenRaiderGun</li>
+			<li>TuskenRaiderWeapons</li>
+    	</weaponTags>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="TuskenRaiderNPCAbstractBase">
+		<defName>O21_NPC_TuskenRaiderStoryteller</defName>
+		<label>Tusken Raider Storyteller</label>
+		<labelPlural>Tusken Raider Storytellers</labelPlural>
+		<isFighter>false</isFighter>
+		<combatPower>40</combatPower>
+		<weaponTags>
+      		<li>TuskenRaiderWeapons</li>
+    	</weaponTags>
+	</PawnKindDef>
+
+</Defs>
